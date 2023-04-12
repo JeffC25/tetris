@@ -19,7 +19,7 @@ class App:
         self.screen.fill(color=FIELD_COLOR)
         pg.display.flip()
 
-    def check_events(self):
+    def checkEvents(self):
         for event in pg.event.get():
             if event.type == pg.QUIT or (event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE):
                 pg.quit()
@@ -27,7 +27,7 @@ class App:
 
     def run(self):
         while True:
-            self.check_events()
+            self.checkEvents()
             self.update()
             self.draw()
 

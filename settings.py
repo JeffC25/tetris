@@ -1,7 +1,7 @@
 import pygame as pg
 
 FPS = 60
-FIELD_COLOR = (48, 39, 32)
+FIELD_COLOR = (222, 222, 222)
 
 TILE_SIZE = 50
 FIELD_SIZE = FIELD_W, FIELD_H = 10, 20
