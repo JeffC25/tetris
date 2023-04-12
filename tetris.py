@@ -5,6 +5,7 @@ from tetromino import Tetromino
 class Tetris:
     def __init__(self, app):
         self.app = app
+        self.spriteGroup = pg.sprite.Group()
         self.tetromino = Tetromino(self)
 
     def drawGrid(self):
@@ -15,6 +16,8 @@ class Tetris:
         
     def update(self):
         self.tetromino.update()
+        self.spriteGroup.update()
 
     def draw(self):
         self.drawGrid()
+        self.spriteGroup.draw(self.app.screen)
